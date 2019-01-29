@@ -1,0 +1,171 @@
+html {
+    
+}
+
+body {
+    
+}
+
+.container {
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: floralwhite;
+    padding: 10px;
+    display: flex;
+}
+
+.mainTitle {
+    flex: 1;
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 3em;
+}
+
+.mainSection-container {
+    background-color: dimgray;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentRow-1 {
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.menuSidebar {
+    flex: 1;
+    background-color: #f4f2e5;
+    padding: 10px;
+    order: 2;
+}
+
+.todaysArticle {
+    flex: 3;
+    background-color: #f7f7f7;
+    padding: 10px;
+    order: 1;
+
+    
+}
+
+.todaysArticle-text {
+   
+}
+
+.todaysImage {
+    
+}
+
+.dark-text-background {
+    background-color: rgba(57, 57, 57, 0.56);
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.sidebar-2 {
+    flex: 1;
+    background-color: #fff8e7;
+    padding: 10px;
+    order: 3;
+}
+
+@media (min-width: 900px) {
+    .contentRow-1 {
+        flex-direction: row;
+    }
+    .menuSidebar {
+        order: 1;
+    }
+    .todaysArticle {
+        order: 2;
+    }
+    .side-bar-2 {
+        order: 3;
+    }
+}
+
+
+.contentRow-2 {
+    background-color: floralwhite;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.articleStub {
+    background-color: #e6edf0;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.image {
+    max-width: 100%;
+}
+.postSection {
+    flex: 4;
+    background-color: aqua;
+    padding: 10px;
+    order: 1;
+}
+
+.dummySpace {
+    flex: 1;
+    background-color: cadetblue;
+    padding: 10px;
+    order: 3;
+}
+
+.postImage {
+    max-width: 100%;
+}
+
+@media (min-width: 900px) {
+    .contentRow-1 {
+        flex-direction: row;
+    }
+    .menuSidebar {
+        order: 1;
+    }
+    .postSection {
+        order: 2;
+    }
+    .dummySpace {
+        order: 3;
+    }
+    .postImage {
+        max-width: 600px;
+    }
+}
+
+.authorSection {
+    flex: 3;
+    order: 1;
+    padding: 10px;
+    background-color: darkgoldenrod;
+}
+
+.authorImage {
+    max-width: 100%;
+}
+
+@media (min-width: 900px) {
+    .contentRow-1 {
+        flex-direction: row;
+    }
+    .menuSidebar {
+        order: 1;
+    }
+    .authorSection {
+        order: 2;
+    }
+    .authorImage {
+        max-width: 600px;
+    }
+}
